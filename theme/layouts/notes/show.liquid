@@ -1,0 +1,16 @@
+{% include 'head' %}
+{% include 'header' %}
+<main class="container">
+    <article class="note">
+        <header class="note-header" style="margin-bottom: 2rem;">
+            <time datetime="{{ note.date }}" style="color: var(--text-secondary); font-size: 0.9rem;">{{ note.date }}</time>
+        </header>
+        <div class="note-content">
+            {{ note.html_content }}
+        </div>
+    </article>
+    <nav class="note-nav" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+        <a href="/notes/">&larr; Back to notes</a>
+    </nav>
+</main>
+{% include 'footer' %}

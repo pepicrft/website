@@ -1,0 +1,78 @@
+{% include 'head' %}
+{% include 'header' %}
+<main>
+    <section class="hero">
+        <div class="container">
+            <p class="hero-tagline">The stable static site generator</p>
+            <p class="hero-description">New versions never break your site. Build your own tools with binary and C bindings. MPL-2.0 licensed.</p>
+            <div class="hero-actions">
+                <a href="https://github.com/pepicrft/gesttalt" class="btn btn-primary">Get Started</a>
+                <a href="/blog/" class="btn btn-secondary">Read the Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="install-section">
+        <div class="container">
+            <p>Get started in seconds</p>
+            <div class="install-command">
+                <code>mise use github:pepicrft/gesttalt</code>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Why Gesttalt</p>
+                <h2 class="section-title">Built for developers who value simplicity</h2>
+                <p class="section-description">No complex configuration. No plugin ecosystem to navigate. Just a tool that works.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Stable by Design</h3>
+                    <p>Conventional structure for content and themes that never breaks. Update Gesttalt knowing your site will keep working.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Blazingly Fast</h3>
+                    <p>Written in Zig for maximum performance. Build thousands of pages in milliseconds.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Simple Templates</h3>
+                    <p>Liquid templates with intuitive syntax. Easy to learn, powerful when you need it.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Programmable</h3>
+                    <p>Binary and C bindings let you build custom tools. Extend functionality without waiting for features.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Zero Configuration</h3>
+                    <p>Put posts in content/, templates in theme/, assets in static/. No config files, just conventions that work.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Runs Anywhere</h3>
+                    <p>Built with Zig to run on Linux, macOS, Windows, and WebAssembly. Single binary, no runtime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Philosophy</p>
+                <h2 class="section-title">A stable foundation for an ecosystem</h2>
+            </div>
+            <div style="display: flex; gap: 3rem; align-items: flex-start; max-width: 100%;">
+                <p style="flex: 1; line-height: 1.6; color: var(--text-secondary); max-width: 65ch;">
+                    Static site generators are compilers that transform content and templates into deployable sites. They're powerful, but here's the thing: most lack the <strong>strict conventions</strong> that would enable a broader ecosystem. Think about the Web. Thanks to <a href="https://www.w3.org/standards/" target="_blank" rel="noopener">standards</a>, <a href="https://resilientwebdesign.com/" target="_blank" rel="noopener">browsers and countless tools interoperate</a> seamlessly. Traditional generators? They offer configurable structures that break between versions. Gesttalt takes a different path. It's designed <em>like a web browser</em>: a stable compiler with unchanging conventions. This foundation isn't just about building sites. It's about enabling an ecosystem of tools, from content editors to deployment utilities, all building on the same reliable structure. We chose Zig to make this vision truly cross-platform, compiling easily for any architecture or platform, ensuring the foundation is accessible everywhere.
+                </p>
+                <div style="flex-shrink: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.8; color: var(--text-primary); padding: 1rem 0;">
+                    <div style="opacity: 0.6; font-size: 0.95rem; margin-bottom: 0.25rem;">Gesttalt =</div>
+                    <div style="white-space: nowrap;">f(content, theme) -> {HTML, CSS, JS}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% include 'footer' %}

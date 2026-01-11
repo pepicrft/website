@@ -1,0 +1,28 @@
+{% include 'head' %}
+{% include 'header' %}
+<main class="container">
+    <section class="posts">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h1>Blog</h1>
+            <a href="/feed.xml" style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 11a9 9 0 0 1 9 9"></path>
+                    <path d="M4 4a16 16 0 0 1 16 16"></path>
+                    <circle cx="5" cy="19" r="1"></circle>
+                </svg>
+                RSS Feed
+            </a>
+        </div>
+        {% for post in posts %}
+        <article class="post-preview">
+            <h2><a href="/blog/{{ post.slug }}/">{{ post.frontmatter.title }}</a></h2>
+            <time datetime="{{ post.date }}">{{ post.date }}</time>
+            <p>{{ post.frontmatter.description }}</p>
+        </article>
+        {% endfor %}
+        {% if posts.size == 0 %}
+        <p>No posts yet.</p>
+        {% endif %}
+    </section>
+</main>
+{% include 'footer' %}
