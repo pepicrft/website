@@ -1,0 +1,20 @@
++++
+title = "Fluidity as DNA"
+description = "The other day I was chatting with a developer who has been following Tuist for many years, and she was positively surprised by how much Tuist has changed over the years. She made me think that we don’t know what shape Tuist will have in yea…"
+published_at = "2025-11-07T08:13:01+00:00"
++++
+
+The other day I was chatting with a developer who has been following Tuist for many years, and she was positively surprised by how much Tuist has changed over the years. She made me think that we don’t know what shape Tuist will have in years from now.
+
+Tuist emerged in the Apple ecosystem and has grown into the platform that we always dreamed of building, but building a company has exposed us to the world of markets, and talking about how to position ourselves and what we stand for has become our daily conversation. Markets are fluid, so should we be.  
+Fluidity is something we are building into our DNA, and decisions like Elixir for our server are a reflection of it. While there are things we still don’t know, and that’s the beauty of building a company, there are things that are becoming clearer and clearer over time.
+
+We don’t see ourselves bound to the Apple ecosystem forever. We are building solutions that can span beyond the Apple ecosystem, and there’s no reason to constrain ourselves to it. We are building infrastructure for productive teams, and we are actively thinking about how the AI world that’s unfolding is creating new opportunities and challenging many ideas that solidified in a pre-agents world.
+
+We also see ourselves going down the vertical stack, something that for many years we avoided, but that became clear is a must if we want to provide the experience that we want our teams to have. But we haven’t figured out the Tuist way yet. While many companies enjoy jumping into markets with competitive pricing and trying to push the prices down, we don’t like that. We enjoy building developer experiences that spark joy, and we have a lot of ideas, but the intersection of that with monetizing those ideas is where things get tricky. At times I think the market in which we move is saturated with ideas, but then I use Linear, which we’ve been actively using for the past weeks, and it serves as a reminder that there’s always space to build something superior if you put enough love into the craft, and that has always driven us at Tuist. We are crafters who just started selling our craft not too long ago, and things just take time.
+
+Ideas take time to emerge, and I’m optimistic we’ll find those models. I’m optimistic because we have built a team and a company culture for that, and because we use our own tools every day, so we experience the same pain that we are solving for our customers. We wouldn’t see ourselves otherwise. We have good taste, even though the last year has been hard for me to accept that with a health issue that kept me very worried and with the lack of inspiration to contribute something meaningful idea-wise, but having gone through that, I feel more back than ever.
+
+We have a strong appetite for doing a lot of things, but we are doing one thing at a time with a long-term mindset as we lay new pieces in the system. We remain open about where things could go, keep converting customers, and look at the markets to figure out where we should position Tuist. Openness remains part of our DNA. I look at companies like Grafana and Sentry as huge sources of inspiration. Companies that proved that things just take time, and that if you are open, in the long term you can easily become a dominant player in the market, and a company with a momentum that’s unbeatable. Openness is something that developers will forever appreciate, and that continues to be avoided because of the fear of being copied.
+
+So we’ll keep building, keep learning, and keep staying true to what got us here. The shape of Tuist will reveal itself as we go, one thoughtful decision at a time. And that’s exactly how it should be.

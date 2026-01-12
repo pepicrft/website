@@ -1,0 +1,12 @@
++++
+title = "WWDC's FOMO"
+description = "I'm avoiding opening Twitter these days. It makes me a bit anxious receiving WWDC news through people racing to be the first one to publish the clickbait-type of tweet. I used to have energy to be part of that race and not suffering from FO…"
+tags = ["fomo", "wwdc", "Apple", "Xcode"]
+published_at = "2020-06-25T12:00:00+00:00"
++++
+
+I'm avoiding opening Twitter these days. It makes me a bit anxious receiving [WWDC](https://developer.apple.com/wwdc20/) news through people racing to be the first one to publish the clickbait-type of tweet. I used to have energy to be part of that race and not suffering from [FOMO](https://en.wikipedia.org/wiki/Fear_of_missing_out), but it's become unsustainable for me － it's not just anxiety, I feel that I'm wasting my time watching or reading about *"the new things"*, even if I don't really need them.
+
+In the past few months, I've worked on turning things around in the way I consume tech. Rather than letting my excitement decide where to spend my time, I consume the content as I need it for my day-to-day tasks. For example, reading about people talking about [SwiftUI](https://developer.apple.com/xcode/swiftui/), especially now around WWDC, made me feel that I should read and talk about it too. However, a more thorough thinking stopped me from doing it. I used that time to learn things that I might need for improving [Tuist](https://tuist.io), which is what I enjoy working on these days.
+
+It's a uncomfortable stance at first, but I believe in its long-term benefits in my mental health. Being ok with not knowing about what was presented during WWDC allows me to use my time more wisely and have a mental space that otherwise I wouldn't have.

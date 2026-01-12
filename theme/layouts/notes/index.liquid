@@ -1,27 +1,22 @@
 {% include 'head' %}
 {% include 'header' %}
-<main class="container">
-    <section class="notes">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-            <h1>Notes</h1>
-            <a href="/notes.xml" style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 11a9 9 0 0 1 9 9"></path>
-                    <path d="M4 4a16 16 0 0 1 16 16"></path>
-                    <circle cx="5" cy="19" r="1"></circle>
-                </svg>
-                RSS Feed
-            </a>
-        </div>
+<main class="page container">
+    <header class="page-header stack">
+        <p class="eyebrow">Notes</p>
+        <p class="lede">Unpolished fragments and observations. Same size, lighter weight.</p>
+        <a href="/notes.xml" class="inline-link">RSS</a>
+    </header>
+
+    <section class="stack notes-list">
         {% for note in notes %}
-        <a href="/notes/{{ note.id }}/" style="text-decoration: none; color: inherit; display: block;">
-            <article class="note-preview" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding: 1rem; margin-left: -1rem; margin-right: -1rem; border-radius: 4px;">
-                <time datetime="{{ note.date }}" style="color: var(--text-secondary); font-size: 0.9rem; display: block; margin-bottom: 1rem;">{{ note.date }}</time>
-                <div>
+        <article class="note-row">
+            <a href="/notes/{{ note.id }}/" class="note-link">
+                <time datetime="{{ note.date }}" class="muted">{{ note.date }}</time>
+                <div class="note-body">
                     {{ note.html_content }}
                 </div>
-            </article>
-        </a>
+            </a>
+        </article>
         {% endfor %}
         {% if notes.size == 0 %}
         <p>No notes yet.</p>

@@ -1,0 +1,25 @@
++++
+title = "Building Bridges, Not Barriers: A Constructive Perspective on International Hiring"
+description = "Guillermo from Vercel recently shared on X that Vercel stopped hiring in Spain, describing the process as challenging. The post sparked considerable discussion, with many offering support and speculation about potential causes like tax comp…"
+published_at = "2025-10-15T09:40:15+00:00"
++++
+
+Guillermo from Vercel recently [shared on X](https://x.com/rauchg/status/1977779569114665339?s=46) that Vercel stopped hiring in Spain, describing the process as challenging. The post sparked considerable discussion, with many offering support and speculation about potential causes like tax complexity, though the original post didn’t provide specific details.
+
+I find this situation unfortunate. Spain has tremendous potential and doesn’t deserve sweeping generalizations. While there’s always room to streamline employment processes, this challenge isn’t unique to Spain. Germany, where I believe Vercel maintains a legal entity and office, presents similar or even greater bureaucratic complexity. Yet framing the company as a victim of the system may obscure a more nuanced reality. Companies naturally optimize for revenue versus cost ratios, and this is fundamental to business.
+
+Europe represents a significant market opportunity, and establishing presence here opens doors to substantial revenue. However, the equation includes another crucial variable: risk. Companies entering new markets often aim to minimize this risk while maximizing returns. We’ve seen similar patterns before. Shopify established their German entity to access EU talent at competitive rates, but later withdrew most operations when employees began organizing.
+
+This pattern resembles what researchers call “institutional arbitrage”: companies seeking favorable conditions across jurisdictions while avoiding less advantageous aspects. [Research on corporate social responsibility](https://hbr.org/2016/05/the-comprehensive-case-for-esg) shows that sustainable business practices, including respectful engagement with local regulatory frameworks, correlate with long-term value creation. Rather than viewing regulations as obstacles, successful global companies recognize them as frameworks that enable stable, thriving markets.
+
+Many business leaders approach market expansion seeking benefits without corresponding responsibilities. A more constructive approach would acknowledge specific tradeoffs. For instance, a CEO might say: “Spain offers X advantages but presented Y and Z challenges compared to our German operations.” This builds understanding rather than discouraging investment in countries with exceptional talent pools.
+
+The world’s diversity extends to business regulations, and navigating this complexity is inherent to global operations. While continuous improvement is valuable, embracing these complexities represents an opportunity, not just an obligation. Leaders in positions of influence can advocate for constructive regulatory evolution with evidence-based proposals rather than broad dismissals.
+
+Founders like Guillermo and myself create employment opportunities that channel capital into economies. Equally important is ensuring employee protections remain robust. This requires legal frameworks we can’t simply circumvent. Exploiting regulatory gaps for competitive advantage ultimately harms the countries we operate in. This approach warrants rejection regardless of a CEO’s accomplishments. Success doesn’t grant exemption from local systems or preferential treatment.
+
+As a CEO, I experience these challenges too. I’ve always viewed them as integral to company building. They represent the interface with systems that enable flourishing societies. **Research on stakeholder capitalism** demonstrates that [businesses considering broader stakeholder interests alongside profit](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-case-for-stakeholder-capitalism) achieve more sustainable growth. Without these frameworks, we might see improved GDP figures, but we’d also see widening inequality, with essential services like healthcare and nutrition access becoming luxuries rather than rights.
+
+I absolutely support streamlined processes and enhanced startup support. What concerns me is adopting a victim stance with unsubstantiated claims. Employment legislation exists for important reasons, and global expansion requires understanding these nuances and determining whether they align with your business model. If they don’t, that’s a legitimate business decision. Our diverse world offers various paths. If operations prove easier in country X, establish there and use Employer of Record services to access talent elsewhere while managing complexity.
+
+Let’s avoid blaming countries rich with talent and potential. Such rhetoric helps neither the country nor the company. Instead, we can acknowledge challenges while recognizing opportunities, building bridges that create value for everyone involved.
