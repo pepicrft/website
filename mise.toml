@@ -1,3 +1,4 @@
 [tools]
 # Install Gesttalt from its GitHub releases
 "github:pepicrft/gesttalt" = "0.5.1"
+"npm:wrangler" = "3.90.0"
