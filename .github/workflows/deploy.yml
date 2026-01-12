@@ -22,10 +22,6 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CF_PAGES_PROJECT_NAME: ${{ vars.CF_PAGES_PROJECT_NAME }}
+          CF_PAGES_PROJECT_NAME: ${{ vars.CF_PAGES_PROJECT_NAME || 'pepicrft' }}
         run: |
-          if [ -z "$CF_PAGES_PROJECT_NAME" ]; then
-            echo "CF_PAGES_PROJECT_NAME repo variable is required" >&2
-            exit 1
-          fi
           wrangler pages deploy ./build --project-name "$CF_PAGES_PROJECT_NAME" --branch main --commit-dirty=true
