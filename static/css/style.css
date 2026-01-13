@@ -297,6 +297,11 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 640px) {
+    .container {
+        padding-left: var(--theme-ui-space-4);
+        padding-right: var(--theme-ui-space-4);
+    }
+
     .site-header .container {
         flex-direction: column;
         align-items: flex-start;
