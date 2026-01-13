@@ -35,5 +35,24 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site_title }} RSS (Writing)" href="/feed.xml">
     <link rel="alternate" type="application/rss+xml" title="{{ site_title }} RSS (Notes)" href="/notes.xml">
     <link rel="alternate" type="application/rss+xml" title="{{ site_title }} RSS (All content)" href="/all.xml">
+
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="/vendor/highlight/styles/github.min.css">
+    <script src="/vendor/highlight/highlight.min.js"></script>
+    <script src="/vendor/highlight/languages/elixir.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        if (!window.hljs) return;
+        document.querySelectorAll('pre[class^="language-"] > code').forEach((code) => {
+            const pre = code.parentElement;
+            pre.classList.forEach((cls) => {
+                if (cls.startsWith('language-')) {
+                    code.classList.add(cls);
+                }
+            });
+        });
+        hljs.highlightAll();
+    });
+    </script>
 </head>
 <body>

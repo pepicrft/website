@@ -1,0 +1,21 @@
+{% include 'head' %}
+{% include 'header' %}
+<main class="page container">
+    <section class="stack">
+        <p class="section-label">Snippets</p>
+        {% for snippet in snippets %}
+        <article class="snippet-row">
+            <time datetime="{{ snippet.date }}" class="muted">{{ snippet.date }}</time>
+            <div class="snippet-body">
+                <a href="/snippets/{{ snippet.id }}/" class="snippet-link">{{ snippet.description }}</a>
+                <p class="muted snippet-filename">{{ snippet.filename }}</p>
+                <div class="snippet-preview">{{ snippet.html_content }}</div>
+            </div>
+        </article>
+        {% endfor %}
+        {% if snippets == empty %}
+        <p class="muted">No snippets yet.</p>
+        {% endif %}
+    </section>
+</main>
+{% include 'footer' %}

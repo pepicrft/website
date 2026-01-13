@@ -295,6 +295,53 @@ h1, h2, h3, h4 {
     font-weight: var(--theme-ui-fontWeights-medium);
 }
 
+/* Snippets */
+.snippet-row {
+    display: flex;
+    gap: var(--theme-ui-space-3);
+    padding: var(--theme-ui-space-3) 0;
+    border-bottom: 1px solid var(--theme-ui-colors-border);
+}
+
+.snippet-body {
+    flex: 1;
+}
+
+.snippet-link {
+    font-weight: var(--theme-ui-fontWeights-strong);
+}
+
+.snippet-filename {
+    font-family: var(--theme-ui-fonts-mono);
+    font-size: 0.875rem;
+}
+
+.snippet-preview pre,
+.snippet-content pre {
+    background: var(--theme-ui-colors-surface);
+    border: 1px solid var(--theme-ui-colors-border);
+    border-radius: var(--theme-ui-radii-soft);
+    padding: var(--theme-ui-space-3);
+    overflow-x: auto;
+    margin-top: var(--theme-ui-space-2);
+}
+
+.snippet-preview code,
+.snippet-content code {
+    font-family: var(--theme-ui-fonts-mono);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.snippet-detail h1 {
+    margin-bottom: var(--theme-ui-space-2);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: var(--theme-ui-space-3);
+}
+
 @media (max-width: 640px) {
     .container {
         padding-left: var(--theme-ui-space-4);
@@ -307,7 +354,8 @@ h1, h2, h3, h4 {
     }
 
     .post-row,
-    .note-row {
+    .note-row,
+    .snippet-row {
         flex-direction: column;
     }
 }

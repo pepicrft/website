@@ -1,0 +1,12 @@
+{% include 'head' %}
+{% include 'header' %}
+<main class="page container">
+    <article class="snippet-detail stack">
+        <a href="/snippets/" class="muted back-link">← Back to snippets</a>
+        <h1>{{ snippet.description }}</h1>
+        <time datetime="{{ snippet.date }}" class="muted">{{ snippet.date }}</time>
+        <p class="muted snippet-filename">{{ snippet.filename }}</p>
+        <div class="snippet-content">{{ snippet.html_content }}</div>
+    </article>
+</main>
+{% include 'footer' %}
