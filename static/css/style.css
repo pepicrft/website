@@ -233,9 +233,17 @@ h1, h2, h3, h4 {
     position: relative;
 }
 
+.heading-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.heading-link:hover {
+    text-decoration: none;
+}
+
 .anchor-link {
     opacity: 0;
-    margin-left: var(--theme-ui-space-2);
     color: var(--theme-ui-colors-muted);
     text-decoration: none;
     font-weight: var(--theme-ui-fontWeights-body);

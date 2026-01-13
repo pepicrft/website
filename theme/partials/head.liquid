@@ -57,11 +57,21 @@
 
         // Anchor links for headings
         document.querySelectorAll('.prose h2, .prose h3, .prose h4').forEach((heading) => {
-            const id = heading.id || heading.textContent.toLowerCase()
+            const text = heading.textContent;
+            const id = heading.id || text.toLowerCase()
                 .replace(/[^a-z0-9]+/g, '-')
                 .replace(/(^-|-$)/g, '');
             heading.id = id;
             
+            // Wrap heading text in a link
+            heading.innerHTML = '';
+            const link = document.createElement('a');
+            link.href = '#' + id;
+            link.className = 'heading-link';
+            link.textContent = text;
+            heading.appendChild(link);
+            
+            // Add the # anchor
             const anchor = document.createElement('a');
             anchor.href = '#' + id;
             anchor.className = 'anchor-link';
