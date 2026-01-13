@@ -286,10 +286,6 @@ h1, h2, h3, h4 {
     margin-top: var(--theme-ui-space-4);
 }
 
-.site-footer .container {
-    padding: 0;
-}
-
 .site-footer p {
     color: var(--theme-ui-colors-muted);
     font-weight: var(--theme-ui-fontWeights-medium);
