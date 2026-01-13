@@ -61,7 +61,8 @@ a:hover {
 }
 
 .page {
-    padding: var(--theme-ui-space-5) 0 var(--theme-ui-space-4);
+    padding-top: var(--theme-ui-space-5);
+    padding-bottom: var(--theme-ui-space-4);
 }
 
 .stack {
