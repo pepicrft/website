@@ -227,6 +227,32 @@ h1, h2, h3, h4 {
     margin-top: var(--theme-ui-space-3);
 }
 
+.prose h2,
+.prose h3,
+.prose h4 {
+    position: relative;
+}
+
+.anchor-link {
+    opacity: 0;
+    margin-left: var(--theme-ui-space-2);
+    color: var(--theme-ui-colors-muted);
+    text-decoration: none;
+    font-weight: var(--theme-ui-fontWeights-body);
+    transition: opacity 0.2s;
+}
+
+.prose h2:hover .anchor-link,
+.prose h3:hover .anchor-link,
+.prose h4:hover .anchor-link,
+.anchor-link:focus {
+    opacity: 1;
+}
+
+.anchor-link:hover {
+    color: var(--theme-ui-colors-text);
+}
+
 .prose p,
 .prose ul,
 .prose ol,

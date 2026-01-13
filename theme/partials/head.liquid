@@ -42,16 +42,33 @@
     <script src="/vendor/highlight/languages/elixir.min.js"></script>
     <script>
     window.addEventListener('DOMContentLoaded', () => {
-        if (!window.hljs) return;
-        document.querySelectorAll('pre[class^="language-"] > code').forEach((code) => {
-            const pre = code.parentElement;
-            pre.classList.forEach((cls) => {
-                if (cls.startsWith('language-')) {
-                    code.classList.add(cls);
-                }
+        // Syntax highlighting
+        if (window.hljs) {
+            document.querySelectorAll('pre[class^="language-"] > code').forEach((code) => {
+                const pre = code.parentElement;
+                pre.classList.forEach((cls) => {
+                    if (cls.startsWith('language-')) {
+                        code.classList.add(cls);
+                    }
+                });
             });
+            hljs.highlightAll();
+        }
+
+        // Anchor links for headings
+        document.querySelectorAll('.prose h2, .prose h3, .prose h4').forEach((heading) => {
+            const id = heading.id || heading.textContent.toLowerCase()
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/(^-|-$)/g, '');
+            heading.id = id;
+            
+            const anchor = document.createElement('a');
+            anchor.href = '#' + id;
+            anchor.className = 'anchor-link';
+            anchor.textContent = '#';
+            anchor.setAttribute('aria-label', 'Link to this section');
+            heading.appendChild(anchor);
         });
-        hljs.highlightAll();
     });
     </script>
 </head>
