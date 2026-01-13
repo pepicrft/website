@@ -309,7 +309,7 @@ h1, h2, h3, h4 {
 
 .snippet-filename {
     font-family: var(--theme-ui-fonts-mono);
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .snippet-preview pre,
@@ -325,7 +325,7 @@ h1, h2, h3, h4 {
 .snippet-preview code,
 .snippet-content code {
     font-family: var(--theme-ui-fonts-mono);
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
