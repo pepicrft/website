@@ -3,13 +3,13 @@ title = "Unlocking New Mental Models with AI"
 description = "Instead of applying AI incrementally to existing workflows, what if we questioned the workflows themselves?"
 +++
 
-I've been tinkering with AI lately, but not in the way most people approach it. Instead of thinking about how to make my existing workflows 10% faster, I've been asking myself: *what mental models could get unlocked if I threw away what I know?*
+I've been tinkering with AI lately, but not in the way most people approach it. Instead of thinking about how to make my existing workflows 10% faster, I've been asking myself: _what mental models could get unlocked if I threw away what I know?_
 
 And it's a lot of fun.
 
 ## Questioning Everything
 
-Take pull requests. We've internalized them as *the way* to collaborate on code. But do we actually need them? What if we could run CI locally with a system that cryptographically attests that the checks ran against the exact code being pushed? You'd skip the entire CI queue, the waiting, the context switching. The attestation proves the work was done—why repeat it on a server?
+Take pull requests. We've internalized them as _the way_ to collaborate on code. But do we actually need them? What if we could run CI locally with a system that cryptographically attests that the checks ran against the exact code being pushed? You'd skip the entire CI queue, the waiting, the context switching. The attestation proves the work was done—why repeat it on a server?
 
 This isn't about optimizing PRs. It's about questioning whether they should exist at all in certain contexts.
 
@@ -33,7 +33,7 @@ With AI, I've had to rewire that instinct. Every token I spend is buying me time
 
 ## An Invitation
 
-If you're still approaching AI incrementally—asking "how can this help me write code faster?"—I'd invite you to try something different. Ask instead: *what assumptions am I making that might not need to exist?*
+If you're still approaching AI incrementally—asking "how can this help me write code faster?"—I'd invite you to try something different. Ask instead: _what assumptions am I making that might not need to exist?_
 
 Challenge the mental blocks. Question the workflows you've inherited. Look at things with an open mind, willing to throw away what you know if something better emerges.
 
