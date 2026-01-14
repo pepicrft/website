@@ -181,6 +181,11 @@ h1, h2, h3, h4 {
     padding-bottom: var(--theme-ui-space-3);
 }
 
+.post-row > time,
+.note-row > time {
+    white-space: nowrap;
+}
+
 .post-row:last-child,
 .note-row:last-child {
     border-bottom: none;
