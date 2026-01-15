@@ -293,6 +293,7 @@ h1, h2, h3, h4 {
 
 .prose code {
     font-family: var(--theme-ui-fonts-mono);
+    font-size: 0.875em;
     background: var(--theme-ui-colors-surface);
     padding: 0.15rem 0.35rem;
     border-radius: 4px;
