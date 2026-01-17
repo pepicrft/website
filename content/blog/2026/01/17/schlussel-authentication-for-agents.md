@@ -5,7 +5,7 @@ tags = ["Agents", "Authentication", "Open Source"]
 published_at = "2026-01-17T12:00:00+00:00"
 +++
 
-I have been building something that started as a personal itch and turned into a project I think matters: [Schlussel](https://github.com/pepicrft/schlussel), an authentication runtime for agents. The name is German for "key," which felt appropriate for something that unlocks API access.
+I have been building something that started as a personal itch and turned into a project I think matters: [Schlussel](https://github.com/pepicrft/schlussel), an authentication runtime for agents. The name is German for "key" (Schlüssel, with an umlaut I dropped for simplicity), which felt appropriate for something that unlocks API access.
 
 The problem is simple but pervasive. **Agents spend an absurd amount of cycles figuring out how to authenticate with services.** They crawl documentation, parse OAuth flows, guess at endpoints, and burn through tokens trying to understand what should be straightforward. Authentication is a solved problem for humans. We click buttons, follow redirects, and paste tokens. For agents, it is a maze.
 
