@@ -11,7 +11,11 @@ The problem is simple but pervasive. **Agents spend an absurd amount of cycles f
 
 ## The wasted context window
 
-Think about what happens when you ask an agent to interact with the GitHub API. If it does not already know how to authenticate, it needs to search for documentation, understand the OAuth flow, figure out which endpoints to hit, and then execute the flow. That is a lot of tokens spent on something that has nothing to do with the actual task.
+Think about what happens when you ask an agent to interact with an API. GitHub is actually one of the easier cases because most developers have the `gh` CLI installed, and agents know how to use it. The CLI manages the session, and the agent can trust it. But most services are not GitHub. They either do not have a CLI, or if they do, developers do not have it installed locally. There is no session to leverage, no familiar tool to fall back on.
+
+This is where things get wasteful. The agent needs to search for documentation, understand the OAuth flow, figure out which endpoints to hit, and then execute the flow. That is a lot of tokens spent on something that has nothing to do with the actual task.
+
+Here is the thing that excites me: with the right session, well managed, an agent can just use `curl`. It does not need a fancy SDK or a dedicated CLI. It just needs a valid token and knowledge of the API endpoints. This means companies do not need to build agent-specific integrations. They just need to make authentication accessible, and agents can work with what already exists.
 
 This is not a theoretical concern. I have watched agents burn through their context window just trying to figure out how to get a token. By the time they succeed, they have forgotten half of what they were supposed to do with it. The cognitive overhead is real, and it is wasteful.
 
