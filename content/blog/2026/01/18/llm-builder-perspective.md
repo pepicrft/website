@@ -15,7 +15,9 @@ Here's what I've observed: the people who wrote good code before still write goo
 
 For me, it's been quite a shift. I still value well architected and tested code that is easy to read and reason about for the long term. That hasn't changed. But I've learned to treat that as a secondary concern when I'm exploring ideas. I can prototype, validate, and throw away. The safety net of clean code comes later, when I know what I'm building actually works for someone.
 
-This is a crucial distinction. I'm not abandoning quality. I'm changing when I apply it. There's a time for careful architecture and a time for rapid exploration, and these are different times. Pretending otherwise just slows down the work that matters.
+It's a struggle when people look at these contributions through the lens of "the code is not perfect" or "the code is not clean." *They're prototypes.* They're meant to be rough. The goal isn't perfection, it's learning.
+
+This is a crucial distinction. **I'm not abandoning quality. I'm changing when I apply it.** There's a time for careful architecture and a time for rapid exploration, and these are different times. Pretending otherwise just slows down the work that matters.
 
 ## The Endurance to Validate
 
@@ -27,9 +29,9 @@ I think this is crucial in business too. When you need to explore directions you
 
 Is it slop? I do not think so.
 
-Initially it might feel like that. Not perfect design, missing features, rough edges everywhere. My Clawdbot breaks pretty much every day when updates come through. It is messy and imperfect and constantly evolving. But it is trending towards stability and a very good shape as people validate it and I learn what actually matters.
+Initially it might feel like that. Not perfect design, missing features, rough edges everywhere. My [Clawdbot](https://github.com/pepicrft/clawdbot) breaks pretty much every day when updates come through. It is messy and imperfect and constantly evolving. But it is trending towards stability and a very good shape as people validate it and I learn what actually matters.
 
-If Peter had started trying to find the perfect architecture before launching, who knows if it would have ever happened. Sometimes done is better than perfect, and LLMs help me get to done faster so I can learn what perfect should actually look like.
+If [Peter Steinberger](https://steipete.com) had started trying to find the perfect architecture before launching, who knows if it would have ever happened. Sometimes done is better than perfect, and LLMs help me get to done faster so I can learn what perfect should actually look like.
 
 The key difference between slop and a rough prototype is direction. Slop has no direction, no learning, no improvement. A rough prototype is a hypothesis being tested. I know which one I'm building.
 
