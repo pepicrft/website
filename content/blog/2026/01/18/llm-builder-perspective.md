@@ -2,6 +2,7 @@
 title = "The Builder's Case for LLMs: Why I Stopped Caring About the Slop Narrative"
 description = "I don't like the constant association between using LLMs and writing slop code. It's a narrative that follows me every time I mention AI in my work."
 tags = ["LLM", "AI", "builder", "software development"]
+author = "Pedro Piñera Buendía"
 published_at = "2026-01-17T20:00:00+00:00"
 +++
 
