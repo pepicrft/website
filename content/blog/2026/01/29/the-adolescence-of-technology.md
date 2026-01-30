@@ -11,7 +11,7 @@ There's a question that haunts anyone building technology that threatens establi
 
 I've been thinking about this in the context of technology that has the potential to dismantle entrenched positions of power. Not because I believe these technologies are existentially dangerous, but because they share a fundamental characteristic with powerful AI: **they redistribute capabilities that were previously concentrated.**
 
-## The Developer Dependency Graph
+## The GitHub Problem
 
 Every developer exists within a web of dependencies that shape their choices:
 
@@ -20,15 +20,32 @@ Every developer exists within a web of dependencies that shape their choices:
 - **The integration graph**: The tools and services that connect to each other, creating compound lock-in
 - **The attention graph**: Who sees your work, who can benefit from it, who gets to decide what's visible
 
-In our industry, these graphs are largely controlled by a single platform. Your GitHub profile isn't just hosting—it's your professional identity. Your project's visibility isn't just merit—it's algorithmic and editorial decisions made by others. Your integrations aren't just technical choices—they're dependencies on a single entity's ecosystem.
+In our industry, all of these graphs flow through a single company: GitHub.
 
-This isn't accidental. It's the architecture of a power position.
+This isn't a conspiracy—it's the result of years of network effects, strategic acquisitions, and building what developers actually needed at the time. But it creates something that looks a lot like a power position:
+
+- **Your professional identity is hosted on their servers**
+- **Your project's visibility depends on their algorithms and editorial choices**
+- **Your integrations are dependencies on their ecosystem**
+- **Your workflow is optimized for their platform, not your needs**
+
+GitHub didn't set out to create a monopoly. They built something useful and won. But now we're in a world where:
+
+- Resume-ready open source contribution history requires a GitHub profile
+- CI/CD tools integrate most naturally with GitHub Actions
+- Package registries default to GitHub's
+- Recruitment processes expect GitHub profile URLs
+- The term "GitHub star" has become a de facto currency in open source
+
+This is what a dominant position looks like. It's not about one feature being better—it's about the accumulated weight of network effects, integrations, and behavioral expectations creating switching costs that have nothing to do with the underlying value proposition.
 
 ## The "Adolescence" Moment
 
-Amodei argues that powerful AI will arrive in a "technological adolescence"—a transitional period where humanity has been handed almost unimaginable power but may not have the maturity to wield it. The same dynamic applies to technology that challenges entrenched positions.
+Amodei argues that powerful AI will arrive in a "technological adolescence"—a transitional period where humanity has been handed almost unimaginable power but may not have the maturity to wield it. The same dynamic applies to technology that challenges entrenched positions like GitHub's dominance.
 
-There's a moment—often unexpected—where a new approach becomes capable enough to threaten established players. The incumbent still has overwhelming advantages: resources, users, brand recognition, talent. But the challenger has something the incumbent cannot easily replicate: a different set of incentives, a different relationship with users, a different definition of success.
+There's a moment—often unexpected—where a new approach becomes capable enough to threaten established players. The incumbent still has overwhelming advantages: resources, users, brand recognition, talent, and in GitHub's case, years of network effects that compound daily. But the challenger has something the incumbent cannot easily replicate: a different set of incentives, a different relationship with users, a different definition of success.
+
+Consider GitHub's position. They've built the dominant platform through genuine value creation. But their incentives are now aligned with platform optimization, not developer empowerment. They acquired npm to integrate it into their ecosystem. They built GitHub Actions to increase lock-in. Every strategic move makes sense from their position—but it also deepens the moat.
 
 This is the adolescence. It's turbulent. It's uncertain. And it's when the most important decisions get made.
 
@@ -116,9 +133,11 @@ Amodei's final category is the hardest to predict: second and third-order effect
 
 Amodei offers a provocative thought experiment: imagine a "country of geniuses" materialized in 2027—50 million Nobel-level capabilities operating 10x faster than humans. A national security advisor would call this "the single most serious threat we've faced in a century."
 
-Apply the same framing to power redistribution. Imagine a technology emerges that genuinely dismantles a dominant platform. What would the incumbent's strategic response look like? What would the challenger's response to that response look like? What second-order effects ripple through the ecosystem?
+Apply the same framing to GitHub's dominance. Imagine a credible alternative emerges that genuinely challenges their position. What would Microsoft's strategic response look like? What would the challenger's response to that response look like? What second-order effects ripple through the ecosystem?
 
-This isn't defeatism. It's strategic clarity. Understanding the forces you're up against—including your own potential to become what you oppose—is prerequisite to navigating the transition well.
+GitHub isn't going anywhere tomorrow. But they're not immune to competitive pressure either. The question is whether that pressure comes from genuine alternatives or from regulatory intervention—and whether the industry can evolve without catastrophic disruption.
+
+This isn't defeatism. It's strategic clarity. Understanding the forces at play—including the possibility that you might become the thing you set out to oppose—is prerequisite to navigating the transition well.
 
 ## What Success Looks Like
 
