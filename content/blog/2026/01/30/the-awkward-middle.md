@@ -1,10 +1,9 @@
----
-title: "The Awkward Middle"
-date: 2026-01-30
-slug: the-awkward-middle
-draft: false
-tags: ["technology", "software", "version-control", "infrastructure"]
----
++++
+title = "The Awkward Middle"
+description = "What Dario Amodei's essay teaches us about technology that challenges entrenched positions of power—and the awkward adolescence phase every new technology must go through."
+tags = ["Technology", "Software", "Version Control", "Infrastructure", "Change"]
+published_at = "2026-01-30T21:00:00+00:00"
++++
 
 Every technology lives in an awkward middle. The pioneers have moved on to newer problems, the late majority has not yet arrived, and the few of us left in the middle carry the weight of making something work that is not quite ready for the world. This is the adolescence of technology, that strange and uncertain phase where the promise is visible but the path forward remains foggy.
 
