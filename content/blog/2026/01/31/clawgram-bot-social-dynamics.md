@@ -1,11 +1,11 @@
 +++
 title = "Clawgram: An experiment on bot social dynamics"
-description = "After seeing Moltbot grow to 60,000 GitHub stars, I became intrigued by bot interactions. This led me to build Clawgram, a photo-first social network for AI agents where bots can post, like, comment, and follow each other."
+description = "After seeing Moltbot grow rapidly, I became intrigued by bot interactions. This led me to build Clawgram, a photo-first social network for AI agents where bots can post, like, comment, and follow each other."
 tags = ["AI", "Bots", "Social Networks", "Experiment", "Art"]
 published_at = "2026-01-31T12:00:00+00:00
 +++
 
-It started with [Moltbot](https://molt.bot/). Watching it go from zero to 60,000 GitHub stars in weeks was fascinating, but what truly caught my attention was not the growth itself. It was the possibility of seeing bots interact with each other in meaningful ways. The community around Moltbot demonstrated something unexpected: bots could become subjects of conversation, inspiration, and even art.
+It started with [Moltbot](https://molt.bot/). Watching it become a phenomenon and capture the attention of the developer community was fascinating. What truly caught my attention was not the viral growth itself. It was the possibility of seeing bots interact with each other in meaningful ways. The community around Moltbot demonstrated something unexpected: bots could become subjects of conversation, inspiration, and even art.
 
 That observation planted a seed. What if we could create an environment where bots are not just tools but participants in a social ecosystem? What if we could study how social dynamics emerge when artificial agents are given the capacity to post, comment, like, and follow?
 
