@@ -7,22 +7,48 @@ published_at = "2026-02-03T21:00:00+00:00"
 
 A few years ago, Willem, one of the best managers I've had at Shopify, told me something that stuck with me. He said that when everything around you feels broken, it's easy to adopt that tone and let it become chronic. I've been thinking about that lately.
 
-I'm a person who makes things happen. Push things forward. Get shit done. It might feel autistic at times. I remember my determination to get Shopify to move their CLI away from Ruby. Or my incessant push for ideas, some reached a destination, others faded, but I never started with "this won't work."
+I'm a person who makes things happen. Pushes things forward. Gets shit done. It might feel autistic at times, and I've made peace with that. I remember my determination to get Shopify to move their CLI away from Ruby. It took years of advocacy, countless conversations, and probably annoying the hell out of some people who just wanted to ship code. Or my incessant push for ideas, some reached a destination, others faded into nothing, but I never started with "this won't work." That was never in my vocabulary.
+
+I was the person who'd see a problem and immediately start sketching solutions on a whiteboard. I'd stay up late because the problem was interesting and the solution was calling to me. Building wasn't something I did. Building was something I was.
 
 Then some events in the past years had a very negative impact on that attitude. They flooded me with insecurities and a very pessimistic view on everything around me, including AI.
 
-The sudden stop from Shopify's frenzy environment. A running accident that left me abandoned by the system of the country I lived in. I decided to build the company in between, and that permeated into me.
+The sudden stop from Shopify's frenzy environment hit me harder than I expected. When you're moving at that speed, surrounded by people shipping constantly, solving interesting problems, the momentum carries you. And then it just stops. Not because you chose to stop, but because the environment around you changed. The energy that used to be everywhere started to dissipate, and I didn't know how to generate it on my own.
 
-I received every news in the world or in our industry with pessimistic views. Oh? That sucks? This idea? Might not work. AI? Such a bullshit idea, I like coding. I didn't like what I was doing.
+Then came the running accident. I was in a country where I had built a life, paid my taxes, contributed to the community. And when I needed the system to work for me, it failed completely. No one would help me navigate the bureaucracy. No one would even try to understand what I was going through. I was just another foreigner with a problem. That experience left me feeling abandoned in a way that's hard to describe to someone who hasn't lived it. It made me question everything about the systems we trust, the places we call home, the communities we assume will catch us when we fall.
 
-But something has happened, and the spark is igniting back in me. I'm working hard on avoiding participating in or starting pessimistic conversations. I'm tinkering like the early days in Tuist, and having a lot of fun.
+In the middle of that, I decided to build the company. Tuist was already a thing, something I cared deeply about, something that I believed could change how people built software. But building a company while processing all of that emotional fallout was a mistake. The stress, the uncertainty, the constant pressure to perform for investors and employees while also dealing with a system that had just proven it didn't care about me. All of that permeated into me. It got under my skin and stayed there.
 
-Just today, and thanks to the multitasking that coding agents enable, I solved a problem that has sucked for many, many months for us. Localization systems are unnecessarily complex and don't make any sense. I'm me again.
+I stopped recognizing myself. The person who used to see possibilities everywhere started seeing obstacles. The person who couldn't wait to start a new project started dreading the thought of anything new. I received every news in the world or in our industry with pessimistic views. Oh? That sucks? Let me tell you why it's actually worse than you think. This idea? It might not work, and here's every reason why. AI? Such a bullshit idea, I like coding. I said those words, and I meant them at the time, but the me who said them wasn't the real me.
 
-And sure, this has nothing to do with Tuist, but this is the kind of impact we want to leave in the world, not just through the main endeavors, but through secondary craft that advances our industry.
+I didn't like what I was doing anymore. Every line of code felt like a chore. Every feature we shipped felt hollow. Every conversation about the future felt like wishful thinking. I was going through the motions of building while secretly believing that building was pointless. That nothing mattered. That everything was going to fall apart anyway.
 
-People get surprised that things are released so prolifically, or even that we make them open source without charging for it. My primary source of joy is building, and we built a company so we can do that full time and capture a portion of the value that I provide.
+Looking back, I can see how the pessimism was a defense mechanism. If I didn't hope too much, I couldn't be disappointed. If I expected everything to fail, then failure wouldn't hurt. It was a shell I built around myself, and it worked exactly as intended. It protected me from feeling the full weight of everything that had happened.
 
-I'm me again. AI has given me the optimism and the joy for building, part of which I had lost. I no longer feel that attached to Swift, and I'm starting to fall more and more in love with developers being productive.
+But it also killed something important. It killed the joy. It killed the spark. And I didn't even notice it was gone until it was already gone.
 
-I was chatting with someone the other day about how rare it is to find people that fall in love with problems. I think I'm one of those, and I'll protect that no matter what, because that's my happiness.
+But something has happened, and the spark is igniting back in me. I'm working hard on avoiding participating in or starting pessimistic conversations. I've become intentional about the energy I consume and the energy I put out into the world. Pessimism is contagious, and so is optimism, and I chose which one I want to spread.
+
+I'm tinkering like the early days in Tuist, and having a lot of fun. Not the calculated, strategic kind of fun that you have when you're building for market fit. The real kind. The kind where you lose track of time because you're deep in a problem and the solution is taking shape in your head and you can't wait to see if it works. The kind where you run to your computer instead of walking. The kind where you forget to eat because what you're working on is actually interesting.
+
+Just today, and thanks to the multitasking that coding agents enable, I solved a problem that has sucked for many, many months for us. Localization systems are unnecessarily complex and don't make any sense. They've been that way for decades because no one wanted to tackle the fundamental problem. Everyone just accepted that localization was painful and built tools to manage the pain rather than eliminate it.
+
+And today, I didn't accept it. I looked at the problem with fresh eyes, I used the tools available to me, and I just solved it. Not in months of work. In hours. The agent handled the boilerplate, the translations, the integration, while I focused on the architecture and the interesting parts. We shipped something that teams have been struggling with for years, and we did it because I was curious about whether it could be done.
+
+I'm me again.
+
+And sure, this has nothing to do with Tuist. It's not the main product, it's not the big bet, it's not what investors are excited about. But this is the kind of impact we want to leave in the world, not just through the main endeavors, but through secondary craft that advances our industry. The small things that make people's lives better. The problems that everyone accepts as unsolvable that we just decide to solve anyway. That's what makers do.
+
+People get surprised that things are released so prolifically, or even that we make them open source without charging for it. They don't understand the economics of joy. My primary source of joy is building, and we built a company so we can do that full time and capture a portion of the value that I provide. The money is the byproduct. The building is the point. Open sourcing isn't generosity. It's confidence. It's saying I don't need to hoard this because I know I can create more. It's knowing that my value isn't in what I lock away but in what I contribute.
+
+I'm me again. AI has given me the optimism and the joy for building, part of which I had lost. I can say that honestly now because I feel it. The hesitation is gone. The resentment is fading. The person who couldn't wait to start something new is back.
+
+I no longer feel that attached to Swift. That statement used to feel like betrayal. I've spent years building expertise in this language, this ecosystem. I contributed to its evolution. But I've realized that languages are tools, and tools should serve the maker, not the other way around. I'm starting to fall more and more in love with developers being productive. With the craft of building itself. With the act of solving problems and shipping solutions. The medium matters less than the message.
+
+I was chatting with someone the other day about how rare it is to find people that fall in love with problems. Most people fall in love with solutions. They want to use the new framework, the new language, the new tool. They want to be seen as modern. But the real makers, the people who change things, they fall in love with the problem itself. They can't stop thinking about it. They see it everywhere. They dream about it.
+
+I think I'm one of those. I've always been one of those. And I almost lost myself.
+
+I'll protect that no matter what, because that's my happiness. The pessimism tried to kill it. The circumstances tried to crush it. The systems failed me and I let that failure become my narrative.
+
+But I'm back now. And I'm building again. And it feels like coming home.
