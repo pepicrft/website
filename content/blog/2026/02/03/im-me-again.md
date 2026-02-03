@@ -11,7 +11,11 @@ I'm a person who makes things happen. Pushes things forward. Gets shit done. It 
 
 I was the person who'd see a problem and immediately start building solutions. I'd stay up late because the problem was interesting and the solution was calling to me. Building wasn't something I did. Building was something I was.
 
-And I was always ahead of the curve. Not in a braggy way, just in the way that people who solve problems before they become obvious have to be. I could see where things were heading before everyone else did. But that vision came with a cost. The cost of not being able to explain it to people who didn't see what I saw. The cost of watching people nod along in meetings while having no idea what I was actually proposing. The cost of knowing something is right while being unable to articulate why.
+And I was always ahead of the curve. Not in a braggy way, just in the way that people who solve problems before they become obvious have to be. I could see where things were heading before everyone else did. But that vision came with a cost.
+
+Some people don't understand where I'm heading. They can't see it. They can't put it into words. And instead of asking questions, they try to put me down. They call my ideas too abstract. They say I'm overcomplicating things. They dismiss my conviction as arrogance. That shit wears on you. You start to doubt yourself because the majority keeps telling you that what you see isn't real. You start to question whether you're onto something or whether you're just delusional.
+
+But that vision came with a cost. The cost of not being able to explain it to people who didn't see what I saw. The cost of watching people nod along in meetings while having no idea what I was actually proposing. The cost of knowing something is right while being unable to articulate why.
 
 There were people who tried to put me down for it. Who called my ideas too abstract. Who said I was overcomplicating things when I was actually simplifying them at a level they couldn't perceive. Who dismissed my conviction as arrogance. That shit wears on you over time. You start to doubt yourself because the majority keeps telling you that what you see isn't real. You start to question whether you're actually onto something or whether you're just delusional.
 
