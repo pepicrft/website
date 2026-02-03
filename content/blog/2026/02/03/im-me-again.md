@@ -65,8 +65,6 @@ I'm me again.
 
 And sure, this has nothing to do with Tuist. It's not the main product, it's not the big bet. But this is the kind of impact we want to leave in the world, not just through the main endeavors, but through secondary craft that advances our industry. The small things that make people's lives better. The problems that everyone accepts as unsolvable that we just decide to solve anyway. That's what makers do.
 
-People get surprised that things are released so prolifically, or even that we make them open source without charging for it. They don't understand the economics of joy. My primary source of joy is building, and we built a company so we can do that full time and capture a portion of the value that I provide. The money is the byproduct. The building is the point. Open sourcing isn't generosity. It's confidence. It's saying I don't need to hoard this because I know I can create more. It's knowing that my value isn't in what I lock away but in what I contribute.
-
 I'm me again. AI has given me the optimism and the joy for building, part of which I had lost. I can say that honestly now because I feel it. The hesitation is gone. The resentment is fading. The person who couldn't wait to start something new is back.
 
 P.S. I'm taking the l10n tool ([github.com/tuist/l10n](https://github.com/tuist/l10n)) to the main Tuist repo tomorrow. It's time to see if we can make localization suck less for everyone, not just us. Expect some messy commits and probably a few late nights as I figure out how to integrate it properly. That's the fun part anyway.
