@@ -11,6 +11,12 @@ I'm a person who makes things happen. Pushes things forward. Gets shit done. It 
 
 I was the person who'd see a problem and immediately start sketching solutions on a whiteboard. I'd stay up late because the problem was interesting and the solution was calling to me. Building wasn't something I did. Building was something I was.
 
+And I was always ahead of the curve. Not in a braggy way, just in the way that people who solve problems before they become obvious have to be. I could see where things were heading before everyone else did. But that vision came with a cost. The cost of not being able to explain it to people who didn't see what I saw. The cost of watching people nod along in meetings while having no idea what I was actually proposing. The cost of knowing something is right while being unable to articulate why.
+
+There were people who tried to put me down for it. Who called my ideas too abstract. Who said I was overcomplicating things when I was actually simplifying them at a level they couldn't perceive. Who dismissed my conviction as arrogance. That shit wears on you over time. You start to doubt yourself because the majority keeps telling you that what you see isn't real. You start to question whether you're actually onto something or whether you're just delusional.
+
+And the worst part is that I couldn't always put it into words. The vision was clear in my head but came out as fragmented thoughts that people couldn't connect. I'd try to explain where we were heading and end up sounding confused instead of visionary. That gap between what I understood and what I could communicate was exhausting. I watched people nod to my words while missing the point entirely. I learned to stop trying as hard because it was painful to be misunderstood by people who weren't willing to look deeper.
+
 Then some events in the past years had a very negative impact on that attitude. They flooded me with insecurities and a very pessimistic view on everything around me, including AI.
 
 The sudden stop from Shopify's frenzy environment hit me harder than I expected. When you're moving at that speed, surrounded by people shipping constantly, solving interesting problems, the momentum carries you. And then it just stops. Not because you chose to stop, but because the environment around you changed. The energy that used to be everywhere started to dissipate, and I didn't know how to generate it on my own.
@@ -24,6 +30,8 @@ I stopped recognizing myself. The person who used to see possibilities everywher
 I didn't like what I was doing anymore. Every line of code felt like a chore. Every feature we shipped felt hollow. Every conversation about the future felt like wishful thinking. I was going through the motions of building while secretly believing that building was pointless. That nothing mattered. That everything was going to fall apart anyway.
 
 Looking back, I can see how the pessimism was a defense mechanism. If I didn't hope too much, I couldn't be disappointed. If I expected everything to fail, then failure wouldn't hurt. It was a shell I built around myself, and it worked exactly as intended. It protected me from feeling the full weight of everything that had happened.
+
+And some people were all too happy to reinforce that shell. The ones who always said I was wrong before I was right. The ones who took joy in pointing out why things wouldn't work instead of figuring out how they could. The ones who saw my uncertainty as an opportunity to pounce. They weren't bad people, but they were predators in conversations, and I let them shape how I saw the world. Their doubt became my doubt. Their pessimism became my pessimism. And for a while, I stopped fighting it because fighting alone is exhausting and no one was fighting alongside me.
 
 But it also killed something important. It killed the joy. It killed the spark. And I didn't even notice it was gone until it was already gone.
 
