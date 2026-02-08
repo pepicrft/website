@@ -7,7 +7,7 @@ published_at = "2026-02-08T10:00:00+00:00"
 
 There is a reality that we can no longer ignore: code is getting fast and cheap to produce. The barrier to creating software has collapsed in ways that would have seemed impossible a few years ago. What once required weeks of engineering work can now be achieved in hours with the right prompting and a capable model. This is not speculation. This is happening right now, and it's accelerating.
 
-At [Tuist](https://tuist.dev), we see this every day. Project generation that used to be a core product feature is now something that can be replicated with a few well-crafted prompts. The competitive advantage we thought we had is being eroded not by competitors, but by the fundamental commoditization of software production itself. This is not a crisis to lament. It is a reality to understand and adapt to.
+At [Tuist](https://tuist.dev), we're watching closely as AI reshapes what's possible in software development. Project generation, which has been at the core of our product, faces new pressures as AI makes it easier to generate code and project structures. While we haven't yet seen widespread replication of project generation tools in the iOS space, we're seeing clear signals in adjacent industries that suggest where things are heading. This isn't a crisis to lament. It is a reality to understand and adapt to.
 
 ## Where does value live now
 
