@@ -7,7 +7,7 @@ published_at = "2026-02-08T10:00:00+00:00"
 
 There is a reality that we can no longer ignore: code is getting fast and cheap to produce. The barrier to creating software has collapsed in ways that would have seemed impossible a few years ago. What once required weeks of engineering work can now be achieved in hours with the right prompting and a capable model. This is not speculation. This is happening right now, and it is accelerating.
 
-At [Tuist](https://tuist.dev), we are watching closely as AI reshapes what is possible in software development. Project generation, which has been at the core of our product, faces new pressures as AI makes it easier to generate code and project structures. While we have not yet seen widespread replication of project generation tools in the iOS space, we are seeing clear signals in adjacent industries that suggest where things are heading.
+At [Tuist](https://tuist.dev), we are watching closely as AI reshapes what is possible in software development. Project generation, which has been at the core of our product, now faces new pressures. We are seeing developers use coding agents to build solutions in other domains, and there is a real risk that this energy will extend to our space. If developers can use AI to build tools for web development, database management, or CI pipelines, it is not hard to imagine the same approach being applied to iOS tooling.
 
 This shift forces a question that every software company must answer: if code itself is becoming a commodity, where does value actually live?
 
