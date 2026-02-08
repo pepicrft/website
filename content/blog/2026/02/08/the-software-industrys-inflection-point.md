@@ -15,13 +15,13 @@ If software itself is becoming a commodity, then companies like ours need to be 
 
 The challenge that remains hard is not writing code. It's running it efficiently at scale. Modern hardware imposes real ceilings on what individual developers can achieve, and those ceilings become painful bottlenecks when you're working on large codebases with complex build processes. Co-located cache infrastructure, distributed compilation, optimized binary distribution, these are problems that don't go away just because code generation became cheap.
 
-We built Tuist Cloud to solve these problems for teams working on large iOS projects. The value we capture there comes from infrastructure expertise, not from the fact that we wrote code that someone couldn't theoretically write themselves. Infrastructure is hard to build, harder to operate at scale, and genuinely valuable when it works.
+We built Tuist to solve these problems for teams working on large iOS projects. The value we capture there comes from infrastructure expertise, not from the fact that we wrote code that someone couldn't theoretically write themselves. Infrastructure is hard to build, harder to operate at scale, and genuinely valuable when it works.
 
 ## The AWS paradox
 
 Here is where things get complicated. AWS can solve most of these infrastructure problems. EC2, EKS, Lambda, the entire AWS portfolio is essentially infrastructure as a service. For companies willing to invest the effort, it's possible to build your own dev productivity infrastructure on top of cloud primitives. There's no fundamental moat there.
 
-This might seem like a problem for our business. Why would anyone pay for Tuist Cloud when they could just spin up AWS resources and build their own caching layer?
+This might seem like a problem for our business. Why would anyone pay for Tuist when they could just spin up AWS resources and build their own caching layer?
 
 The answer is that most organizations shouldn't. Or more precisely, most organizations shouldn't unless they're willing to accept the costs of building, operating, and maintaining infrastructure that meets enterprise expectations. AWS provides raw infrastructure, but it doesn't provide the expertise, the tuning, the troubleshooting, or the guarantees that large organizations require. AWS can host your build cache, but they won't wake up at 3 AM when something goes wrong with your specific configuration.
 
