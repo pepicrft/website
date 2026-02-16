@@ -9,7 +9,7 @@ Except now coding agents make that superpower accessible to everyone. You descri
 
 ## What we are really selling
 
-Founders talk about this all the time. When you sell software to a company, you are not selling code. You are selling liability. You are selling someone to make sure the servers stay up. You are selling someone to fix the bug that will inevitably appear at 3am. You are selling someone to add the feature that the customer asked for six months ago.
+Founders talk about this all the time. When you sell software to a company, you are not selling code. You are selling liability — someone to answer when things break at 3am. You are selling reliability, performance, the knowledge that someone understands your system deeply enough to fix what breaks and improve what works.
 
 Writing code became cheaper. The rest did not.
 
@@ -25,7 +25,9 @@ Peter Steinberger from OpenFlow wrote that he stopped reviewing code. That felt 
 
 The more we trust agents, the fewer humans we need. The fewer humans, the simpler the organization. No one needs a permission matrix when an agent can plug into every system. No one needs a dashboard to understand headers when the agent can read them for you.
 
-We need to be weakly opinionated about how we used to do things. We need to be strongly curious about what the new capabilities enable.
+The challenge is not just about tools — it is about mental models. The ideas we have accumulated over years of practice. The patterns we recognize, the architectures we defend, the "right way" to do things that we have internalized. None of it is wrong. All of it might be obsolete.
+
+We need to let go — of the certainty that we know the best way, of the identity that comes from mastering a process, of the comfort in knowing how things work. Then we need to come back, curious, open, ready to build again with new foundations.
 
 Resisting change because that is how things have always been is detrimental to the entire industry.
 
