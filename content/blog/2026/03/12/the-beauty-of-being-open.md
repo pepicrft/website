@@ -1,5 +1,5 @@
 +++
-title = "The beauty of being open"
+title = "🌸 The beauty of being open"
 description = "Openness is not a trend or a distribution strategy. It's a way of building trust, expanding your pool of ideas, and creating something that lasts."
 tags = ["Open Source", "Tuist", "Developer Community", "Trust"]
 published_at = "2026-03-12T00:00:00+00:00"
