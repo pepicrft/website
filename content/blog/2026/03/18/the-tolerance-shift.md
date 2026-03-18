@@ -43,13 +43,23 @@ This second layer is more powerful. It is cheaper. It is more flexible. You can 
 
 ## The coupling problem
 
-This brings me to something I have been thinking about a lot. Many companies that provide CI or development environments bundle their runtime optimizations with their compute. They offer caching, build optimization, test insights, but only if you use their infrastructure. The value is real, but it is locked in. If you leave their compute, you lose the optimizations too.
+This brings me to something I have been thinking about a lot. Many companies that provide CI or development environments bundle their runtime optimizations with their compute. They offer caching, build optimization, test insights, and on paper you can plug them into other environments too. But the system design is deeply coupled to their own infrastructure. When you try to use it outside of their environment, the latency is high, the effectiveness drops, and the experience is nothing like what they advertise. Sure, you can technically plug it in. But the plug does not deliver what you would expect as a developer.
 
-I understand why they do this. Compute is where the money is. You monetize CPU minutes, memory, storage. Why would you decouple the thing that makes people stay?
+I understand why they design it this way. Compute is where the money is. You monetize CPU minutes, memory, storage. Why would you optimize for environments you do not control?
 
 But I think this model is heading for trouble. The future of compute is fragmented by design. OpenAI runs [Codex](https://openai.com/codex/) in its own containers. Anthropic will have its own agent environments. [Linear](https://linear.app/) is already running agentic workflows in their own infrastructure. [Sentry](https://sentry.io/) is too. Every tool in the chain wants to own execution. No single player is going to control where all development happens.
 
-If your runtime optimizations only work in your environment, you are betting on a future where you are the only environment. That is an unrealistic bet. And from the other side, why would OpenAI or Anthropic give away their compute revenue to a third-party environment provider? They have every incentive to run things themselves.
+If your runtime optimizations only work well in your environment, you are betting on a future where you are the only environment. That is an unrealistic bet. And from the other side, why would OpenAI or Anthropic give away their compute revenue to a third-party environment provider? They have every incentive to run things themselves.
+
+## The clean build problem
+
+There is another dimension to this fragmentation that does not get enough attention: incremental builds. On a developer's laptop, builds are incremental by default. You change a file, the compiler rebuilds only what depends on it. This is fast because state persists between builds. Your derived data, your intermediate artifacts, they are all sitting there from the last run.
+
+But when Codex compiles your Swift project in a fresh container, or when a CI runner picks up a job on a clean machine, that state is gone. Every build is a clean build. Everything gets recompiled from scratch. This is where the toolchain slowness becomes most brutal, and it is exactly the environment where agents are increasingly doing their work.
+
+The solution is to bring incrementality across environments. Not just within a single machine, but across local development, CI, and agentic workflows. When an agent runs a build in a remote sandbox, it should be able to pull cached artifacts from a previous build, whether that build happened on your laptop, on CI, or in another agent session. The build should feel incremental even when the environment is ephemeral.
+
+This is not a simple problem to solve. It requires a deep and complex system design for the cache infrastructure. You need content-addressable storage, fine-grained dependency tracking, and a distributed system that can serve artifacts with low latency from wherever the build is happening. It also requires a decentralized architecture where pieces of the system can escape a centralized model and be brought closer to the compute. Sometimes that means a cache node in the same data center as your CI runners. Sometimes it means a node in your office, close to where your team develops every day. The system needs to support all of these topologies without forcing you into a single deployment model.
 
 ## Going deep where others do not
 
@@ -63,9 +73,9 @@ The vision is to become your platform team, offered as a service. We want to get
 
 ## Building the network
 
-If I draw a connection to another company, I think about [Vercel](https://vercel.com/) and their approach to serverless. They built a global edge network and said: "We run your functions close to your users." The same idea applies to what we are building, but for development. We run your cache close to where the development is happening. We give you the flexibility to self-host cache nodes when latency matters. We build infrastructure that is designed for the realities of distributed development, not just centralized CI.
+If I draw a connection to another company, I think about [Cloudflare](https://www.cloudflare.com/) and how they solved the problem of bringing computation close to where it is needed. Their Workers run at the edge, close to the user making the HTTP request. The function does not live in a single data center waiting for traffic to arrive. It lives everywhere, and the system routes you to the nearest one. That model is what inspires how we think about cache infrastructure at Tuist, but applied to development. Instead of running functions close to your end users, we run cache nodes close to where the development is happening. Close to your CI runners. Close to the agent sandbox. Close to your office.
 
-This requires a different kind of infrastructure. Global. Low-latency. Flexible enough for self-hosting. It is not easy, and that is part of why so few companies are doing it seriously.
+This requires a different kind of infrastructure. Global. Low-latency. Decentralized by design. The system needs to let organizations bring cache nodes into their own environments when that is what makes sense. Not every team wants their build artifacts traveling across the internet to a centralized service. Some want a node in their own network, in their own data center, or even in their office. The flexibility to support that, while still providing a managed experience for teams that do not want to think about infrastructure, is what makes this problem hard and interesting.
 
 But the pieces are coming together. Telemetry to understand what is actually slow. Cache infrastructure to eliminate redundant work. Deep toolchain integration to know what to cache, what to skip, and what needs to change in your project. Sometimes the optimization is not just adding a cache. Sometimes it is telling you that a specific configuration in your project is causing unnecessary recompilation, or that a dependency is pulling in work you do not need. All of that requires the kind of depth that you can only build by being genuinely obsessed with the problem.
 
