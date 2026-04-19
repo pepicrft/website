@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ config.title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
+  <link rel="canonical" href="{% block canonical %}{{ config.base_url | safe }}{{ current_path | default(value="/") | safe }}{% endblock %}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <meta property="og:title" content="{% block og_title %}{{ config.title }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ config.description }}{% endblock %}">
+  <meta property="og:url" content="{{ config.base_url | safe }}{{ current_path | default(value="/") | safe }}">
+  <meta property="og:image" content="{{ config.base_url | safe }}/og-image.png">
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  {% block article_meta %}{% endblock %}
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% block tw_title %}{{ config.title }}{% endblock %}">
+  <meta name="twitter:description" content="{% block tw_description %}{{ config.description }}{% endblock %}">
+  <meta name="twitter:image" content="{{ config.base_url | safe }}/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ config.title }} RSS" href="/blog/feed.xml">
+
+  <link rel="stylesheet" href="/vendor/highlight/styles/github.min.css">
+  <script src="/vendor/highlight/highlight.min.js"></script>
+  <script src="/vendor/highlight/languages/elixir.min.js"></script>
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.hljs) {
+      document.querySelectorAll('pre[class^="language-"] > code').forEach((code) => {
+        const pre = code.parentElement;
+        pre.classList.forEach((cls) => { if (cls.startsWith('language-')) code.classList.add(cls); });
+      });
+      hljs.highlightAll();
+    }
+    document.querySelectorAll('.prose h2, .prose h3, .prose h4').forEach((heading) => {
+      const text = heading.textContent;
+      const id = heading.id || text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      heading.id = id;
+      heading.innerHTML = '';
+      const link = document.createElement('a');
+      link.href = '#' + id; link.className = 'heading-link'; link.textContent = text;
+      heading.appendChild(link);
+      const anchor = document.createElement('a');
+      anchor.href = '#' + id; anchor.className = 'anchor-link'; anchor.textContent = ' #';
+      anchor.setAttribute('aria-label', 'Link to this section'); heading.appendChild(anchor);
+    });
+  });
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-identity">
+        <a href="/" class="site-title">{{ config.title }}</a>
+        <span class="site-tagline">Builder and open-sourcerer. Tuist CEO and co-founder.</span>
+      </div>
+      <nav class="site-nav">
+        <a href="/blog/">Writing</a>
+      </nav>
+    </div>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built with <a href="https://www.getzola.org">Zola</a>. The more open the better.</p>
+      <p>
+        <a href="/blog/feed.xml">RSS</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

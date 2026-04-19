@@ -1,0 +1,21 @@
+base_url = "https://pepicrft.me"
+title = "Pedro Piñera"
+description = "Software engineer, open source enthusiast, and builder"
+default_language = "en"
+output_dir = "build"
+compile_sass = false
+generate_feeds = true
+feed_filenames = ["feed.xml"]
+build_search_index = false
+
+taxonomies = [
+  { name = "tags", feed = false },
+]
+
+[markdown]
+render_emoji = false
+smart_punctuation = false
+bottom_footnotes = true
+
+[extra]
+og_image = "/og-image.png"

@@ -12,11 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install mise tools (gesttalt + wrangler)
+      - name: Install mise tools (zola + wrangler)
         uses: jdx/mise-action@v2
 
       - name: Build site
-        run: gesttalt build
+        run: zola build
 
       - name: Deploy to Cloudflare Pages
         env:

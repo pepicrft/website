@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set blog = get_section(path="blog/_index.md") %}
+<main class="page container">
+  {% if blog.pages | length > 0 %}
+  <section class="stack posts-list">
+    <p class="section-label">Recent writing</p>
+    {% for post in blog.pages %}
+    <article class="post-row">
+      <time datetime="{{ post.date }}" class="muted">{{ post.date | date(format="%B %-d, %Y") }}</time>
+      <div class="post-row-body">
+        <a href="{{ post.permalink }}" class="post-link">{{ post.title }}</a>
+        {% if post.description %}<p class="muted">{{ post.description }}</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+</main>
+{% endblock %}

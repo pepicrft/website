@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Writing - {{ config.title }}{% endblock %}
+{% block description %}Long-form notes on building tools, running systems, and keeping software humane.{% endblock %}
+
+{% block content %}
+<main class="page container">
+  <header class="page-header stack">
+    <p class="eyebrow">Writing</p>
+    <p class="lede">Long-form notes on building tools, running systems, and keeping software humane.</p>
+    <a href="/blog/feed.xml" class="inline-link">RSS</a>
+  </header>
+
+  <section class="stack posts-list">
+    {% for post in section.pages %}
+    <article class="post-row">
+      <time datetime="{{ post.date }}" class="muted">{{ post.date | date(format="%B %-d, %Y") }}</time>
+      <div class="post-row-body">
+        <a href="{{ post.permalink }}" class="post-link">{{ post.title }}</a>
+        {% if post.description %}<p class="muted">{{ post.description }}</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+    {% if section.pages | length == 0 %}<p>No posts yet.</p>{% endif %}
+  </section>
+</main>
+{% endblock %}
