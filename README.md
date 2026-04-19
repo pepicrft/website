@@ -1,79 +1,45 @@
-# Pedro Piñera's Personal Website
+# pepicrft.me 🦊
 
-Built with [Zola](https://www.getzola.org), a fast Rust-based static site generator.
+Pedro Piñera's personal website, built with [Zola](https://www.getzola.org).
 
-## Structure
+## 📂 Layout
 
 ```
-.
-├── config.toml          # Zola site configuration
-├── content/
-│   ├── _index.md        # Home section
-│   ├── blog/            # Blog posts at /blog/{slug}/
-│   ├── notes/           # Notes at /notes/{slug}/
-│   └── snippets/        # Code snippets at /snippets/{id}/
-├── templates/           # Tera templates
-└── static/              # Static assets (CSS, images, fonts, vendor scripts)
+config.toml     # site config
+content/blog/   # blog posts → /blog/{slug}/
+templates/      # Tera templates
+static/         # CSS, favicons, fonts, vendor scripts
 ```
 
-## Requirements
+## 🛠  Commands
 
-Tooling is pinned via [mise](https://mise.jdx.dev):
-
-- Zola 0.22.x
-- wrangler (for Cloudflare Pages deploy)
-
-Run `mise install` in the project root.
-
-## Commands
+Tooling is pinned in `mise.toml`. Run `mise install` once, then:
 
 ```bash
-zola serve    # Dev server with live reload at http://127.0.0.1:1111
-zola build    # Build to ./build
-zola check    # Validate links, etc.
+zola serve    # dev server with live reload
+zola build    # build to ./build
 ```
 
-## Authoring
+## ✍️ Writing a post
 
-### Blog posts
-
-Create `content/blog/{slug}.md` with TOML frontmatter:
+Drop a new markdown file into `content/blog/`:
 
 ```markdown
 +++
-title = "Post Title"
-date = 2026-04-19T12:00:00+00:00
-slug = "post-slug"
+title = "Hello"
+date = 2026-04-19
+slug = "hello"
 description = "Short summary"
 
 [taxonomies]
-tags = ["tag1", "tag2"]
+tags = ["tag-one"]
 +++
 
 Body in Markdown.
 ```
 
-The slug becomes the URL: `/blog/post-slug/`.
+The slug becomes the URL: `/blog/hello/`.
 
-### Notes
+## 🚀 Deploy
 
-Create `content/notes/{unix-timestamp}.md`:
-
-```markdown
-+++
-title = "Note 1700000000"
-date = 2026-04-19T12:00:00Z
-slug = "custom-slug-or-timestamp"
-template = "note.html"
-+++
-
-Short observation.
-```
-
-### Snippets
-
-Create `content/snippets/{unix-timestamp}.md` with a fenced code block body and `template = "snippet.html"`.
-
-## Deploy
-
-Pushes to `main` run `.github/workflows/deploy.yml`: `zola build` → `wrangler pages deploy ./build`.
+Push to `main`. GitHub Actions builds with Zola and deploys to Cloudflare Pages.
