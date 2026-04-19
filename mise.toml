@@ -1,4 +1,4 @@
 [tools]
-# Install Gesttalt from its GitHub releases
-"github:pepicrft/gesttalt_old" = "0.7.9"
+erlang = "27.3"
+elixir = "1.19.5-otp-27"
 "npm:wrangler" = "3.90.0"

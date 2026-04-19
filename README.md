@@ -1,83 +1,83 @@
 # Pedro Piñera's Personal Website
 
-This is a personal website built with [Gesttalt](https://github.com/pepicrft/gesttalt), a stable static site generator.
-
-## Current Status
-
-✅ **Initial setup complete:**
-- Gesttalt website structure in place
-- Configuration updated with personal details
-- Theme from gesttalt/website copied
-- Ready for content import from Ghost
-
-🔜 **Next steps:**
-- Import blog posts and content from pepicrft.me via Ghost API
-- Customize theme and styling
-- Add custom content sections
+Built with [Tableau](https://github.com/elixir-tools/tableau), an Elixir static site generator.
 
 ## Structure
 
 ```
 .
-├── gesttalt.toml       # Site configuration
-├── content/            # Content files (to be populated)
-│   ├── blog/           # Blog posts: YYYY/MM/DD/slug.md
-│   └── notes/          # Short notes: {timestamp}.md
-├── theme/              # Liquid templates
-│   ├── layouts/        # Page templates
-│   └── partials/       # Reusable components
-└── static/             # Static assets (CSS, images, etc.)
+├── config/config.exs    # Tableau configuration
+├── lib/
+│   ├── layouts/         # EEx layouts (root, post, note, snippet)
+│   └── pages/           # Hand-written index pages (home, blog, notes, snippets)
+├── _posts/              # Blog posts as YYYY-MM-DD-slug.md with YAML frontmatter
+├── _notes/              # Short notes keyed by Unix timestamp
+├── _snippets/           # Code snippets
+├── static/              # Static assets (CSS, images, fonts)
+└── build/               # Generated site (git-ignored)
 ```
 
-## Building the Site
+## Requirements
 
-You'll need Gesttalt installed. Build with:
+Tooling is pinned via [mise](https://mise.jdx.dev):
+
+- Erlang 27.x
+- Elixir 1.19.x
+- wrangler (for Cloudflare Pages deploy)
+
+Run `mise install` in the project root to install them.
+
+## Commands
 
 ```bash
-gesttalt build
+mix deps.get          # Fetch Elixir dependencies (first time only)
+mix tableau.server    # Dev server with live reload at http://localhost:4999
+mix tableau.build     # Build to ./build
 ```
 
-For development with hot-reload:
+## Authoring
 
-```bash
-gesttalt dev
-```
+### Blog posts
 
-## Content Format
-
-### Blog Posts
-
-Located in `content/blog/YYYY/MM/DD/slug.md`:
+Create `_posts/YYYY-MM-DD-slug.md` with YAML frontmatter:
 
 ```markdown
-+++
-title = "Post Title"
-description = "Post summary"
-tags = ["tag1", "tag2"]
-+++
+---
+title: "Post Title"
+slug: "post-slug"
+date: "2026-04-19T12:00:00+00:00"
+layout: "Pepicrft.PostLayout"
+description: "Short summary"
+tags:
+  - "tag1"
+---
 
-Post content in Markdown...
+Body in Markdown.
 ```
+
+The slug becomes the URL: `/blog/post-slug/`.
 
 ### Notes
 
-Located in `content/notes/{unix_timestamp}.md`:
+Create `_notes/{unix-timestamp}.md`:
 
 ```markdown
-+++
-slug = "custom-id"  # Optional
-+++
+---
+title: "Note 1700000000"
+slug: "custom-slug-or-timestamp"
+published: "2026-04-19T12:00:00Z"
+timestamp: 1700000000
+permalink: "/notes/custom-slug-or-timestamp/"
+layout: "Pepicrft.NoteLayout"
+---
 
-Quick thought or note...
+Short observation.
 ```
 
-## Next: Ghost Import
+### Snippets
 
-Once you provide the Ghost API key, I'll:
-1. Fetch all posts from pepicrft.me
-2. Convert them to Gesttalt's format
-3. Organize them in the correct directory structure
-4. Preserve metadata (title, description, tags, dates)
-5. Convert Ghost HTML/Markdown to Gesttalt's Markdown format
+Create `_snippets/{unix-timestamp}.md` with a fenced code block body.
 
-Ready when you are! 🦊
+## Deploy
+
+Pushes to `main` run `.github/workflows/deploy.yml`: `mix tableau.build` → `wrangler pages deploy ./build`.
