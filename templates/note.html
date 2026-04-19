@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
+
+{% block content %}
+<main class="page container">
+  <article class="stack note">
+    <header class="stack note-header">
+      <time datetime="{{ page.date }}" class="muted">{{ page.date }}</time>
+    </header>
+    <div class="note-content prose">
+      {{ page.content | safe }}
+    </div>
+  </article>
+  <nav class="page-nav">
+    <a href="/notes/">&larr; Back to notes</a>
+  </nav>
+</main>
+{% endblock %}

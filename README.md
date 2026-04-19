@@ -1,83 +1,79 @@
 # Pedro Piñera's Personal Website
 
-This is a personal website built with [Gesttalt](https://github.com/pepicrft/gesttalt), a stable static site generator.
-
-## Current Status
-
-✅ **Initial setup complete:**
-- Gesttalt website structure in place
-- Configuration updated with personal details
-- Theme from gesttalt/website copied
-- Ready for content import from Ghost
-
-🔜 **Next steps:**
-- Import blog posts and content from pepicrft.me via Ghost API
-- Customize theme and styling
-- Add custom content sections
+Built with [Zola](https://www.getzola.org), a fast Rust-based static site generator.
 
 ## Structure
 
 ```
 .
-├── gesttalt.toml       # Site configuration
-├── content/            # Content files (to be populated)
-│   ├── blog/           # Blog posts: YYYY/MM/DD/slug.md
-│   └── notes/          # Short notes: {timestamp}.md
-├── theme/              # Liquid templates
-│   ├── layouts/        # Page templates
-│   └── partials/       # Reusable components
-└── static/             # Static assets (CSS, images, etc.)
+├── config.toml          # Zola site configuration
+├── content/
+│   ├── _index.md        # Home section
+│   ├── blog/            # Blog posts at /blog/{slug}/
+│   ├── notes/           # Notes at /notes/{slug}/
+│   └── snippets/        # Code snippets at /snippets/{id}/
+├── templates/           # Tera templates
+└── static/              # Static assets (CSS, images, fonts, vendor scripts)
 ```
 
-## Building the Site
+## Requirements
 
-You'll need Gesttalt installed. Build with:
+Tooling is pinned via [mise](https://mise.jdx.dev):
+
+- Zola 0.22.x
+- wrangler (for Cloudflare Pages deploy)
+
+Run `mise install` in the project root.
+
+## Commands
 
 ```bash
-gesttalt build
+zola serve    # Dev server with live reload at http://127.0.0.1:1111
+zola build    # Build to ./build
+zola check    # Validate links, etc.
 ```
 
-For development with hot-reload:
+## Authoring
 
-```bash
-gesttalt dev
-```
+### Blog posts
 
-## Content Format
-
-### Blog Posts
-
-Located in `content/blog/YYYY/MM/DD/slug.md`:
+Create `content/blog/{slug}.md` with TOML frontmatter:
 
 ```markdown
 +++
 title = "Post Title"
-description = "Post summary"
+date = 2026-04-19T12:00:00+00:00
+slug = "post-slug"
+description = "Short summary"
+
+[taxonomies]
 tags = ["tag1", "tag2"]
 +++
 
-Post content in Markdown...
+Body in Markdown.
 ```
+
+The slug becomes the URL: `/blog/post-slug/`.
 
 ### Notes
 
-Located in `content/notes/{unix_timestamp}.md`:
+Create `content/notes/{unix-timestamp}.md`:
 
 ```markdown
 +++
-slug = "custom-id"  # Optional
+title = "Note 1700000000"
+date = 2026-04-19T12:00:00Z
+slug = "custom-slug-or-timestamp"
+template = "note.html"
 +++
 
-Quick thought or note...
+Short observation.
 ```
 
-## Next: Ghost Import
+### Snippets
 
-Once you provide the Ghost API key, I'll:
-1. Fetch all posts from pepicrft.me
-2. Convert them to Gesttalt's format
-3. Organize them in the correct directory structure
-4. Preserve metadata (title, description, tags, dates)
-5. Convert Ghost HTML/Markdown to Gesttalt's Markdown format
+Create `content/snippets/{unix-timestamp}.md` with a fenced code block body and `template = "snippet.html"`.
 
-Ready when you are! 🦊
+## Deploy
+
+Pushes to `main` run `.github/workflows/deploy.yml`: `zola build` → `wrangler pages deploy ./build`.

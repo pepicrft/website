@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ term.name }} - {{ config.title }}{% endblock %}
+
+{% block content %}
+<main class="page container">
+  <header class="page-header stack">
+    <p class="eyebrow">{{ taxonomy.name | capitalize }}</p>
+    <h1>{{ term.name }}</h1>
+  </header>
+  <section class="stack posts-list">
+    {% for post in term.pages %}
+    <article class="post-row">
+      <time datetime="{{ post.date }}" class="muted">{{ post.date }}</time>
+      <div class="post-row-body">
+        <a href="{{ post.permalink }}" class="post-link">{{ post.title }}</a>
+        {% if post.description %}<p class="muted">{{ post.description }}</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+</main>
+{% endblock %}

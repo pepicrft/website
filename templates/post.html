@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
+{% block description %}{{ page.description | default(value=config.description) }}{% endblock %}
+{% block og_title %}{{ page.title }}{% endblock %}
+{% block og_description %}{{ page.description | default(value=config.description) }}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block tw_title %}{{ page.title }}{% endblock %}
+{% block tw_description %}{{ page.description | default(value=config.description) }}{% endblock %}
+{% block article_meta %}<meta property="article:published_time" content="{{ page.date }}">{% endblock %}
+
+{% block content %}
+<main class="page container">
+  <article class="stack post">
+    <header class="stack post-header">
+      <p class="muted">{{ page.date }}</p>
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+    <div class="post-content prose">
+      {{ page.content | safe }}
+    </div>
+  </article>
+  <nav class="page-nav">
+    <a href="/blog/">&larr; Back to writing</a>
+  </nav>
+</main>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Notes - {{ config.title }}{% endblock %}
+{% block description %}Unpolished fragments and observations.{% endblock %}
+
+{% block content %}
+<main class="page container">
+  <header class="page-header stack">
+    <p class="eyebrow">Notes</p>
+    <p class="lede">Unpolished fragments and observations. Same size, lighter weight.</p>
+    <a href="/notes/feed.xml" class="inline-link">RSS</a>
+  </header>
+
+  <section class="stack notes-list">
+    {% for note in section.pages %}
+    <article class="note-row">
+      <a href="{{ note.permalink }}" class="note-link">
+        <time datetime="{{ note.date }}" class="muted">{{ note.date }}</time>
+        <div class="note-body">
+          {{ note.content | safe }}
+        </div>
+      </a>
+    </article>
+    {% endfor %}
+    {% if section.pages | length == 0 %}<p>No notes yet.</p>{% endif %}
+  </section>
+</main>
+{% endblock %}
