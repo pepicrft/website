@@ -14,7 +14,7 @@
   <section class="stack posts-list">
     {% for post in section.pages %}
     <article class="post-row">
-      <time datetime="{{ post.date }}" class="muted">{{ post.date }}</time>
+      <time datetime="{{ post.date }}" class="muted">{{ post.date | date(format="%B %-d, %Y") }}</time>
       <div class="post-row-body">
         <a href="{{ post.permalink }}" class="post-link">{{ post.title }}</a>
         {% if post.description %}<p class="muted">{{ post.description }}</p>{% endif %}

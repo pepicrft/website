@@ -6,7 +6,7 @@
 <main class="page container">
   <article class="stack note">
     <header class="stack note-header">
-      <time datetime="{{ page.date }}" class="muted">{{ page.date }}</time>
+      <time datetime="{{ page.date }}" class="muted">{{ page.date | date(format="%B %-d, %Y") }}</time>
     </header>
     <div class="note-content prose">
       {{ page.content | safe }}

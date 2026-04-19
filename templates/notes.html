@@ -15,7 +15,7 @@
     {% for note in section.pages %}
     <article class="note-row">
       <a href="{{ note.permalink }}" class="note-link">
-        <time datetime="{{ note.date }}" class="muted">{{ note.date }}</time>
+        <time datetime="{{ note.date }}" class="muted">{{ note.date | date(format="%B %-d, %Y") }}</time>
         <div class="note-body">
           {{ note.content | safe }}
         </div>
