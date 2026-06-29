@@ -7,7 +7,7 @@ description = "A post on X predicted that development would all move to remote s
 [taxonomies]
 tags = ["Business", "Infrastructure", "AI", "Developer Experience"]
 +++
-I came across a post on X yesterday predicting that development would all move to remote environments, with the CEOs of sandbox-as-a-service companies jumping in to agree, yes, this is inevitable, this has to happen. I can't help thinking the whole thing is an illusion.
+I came across a post on [X](https://x.com) yesterday predicting that development would all move to remote environments, with the CEOs of sandbox-as-a-service companies jumping in to agree, yes, this is inevitable, this has to happen. I can't help thinking the whole thing is an illusion.
 
 Start with why executives want it to be true. There is a business model more attractive than charging a fixed subscription per seat or per plan, and that is charging for granular units like tokens. Compute lets you do exactly that, and it has more in common with serverless than you might think.
 
