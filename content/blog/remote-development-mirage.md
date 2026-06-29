@@ -1,0 +1,28 @@
++++
+title = "The remote development mirage"
+date = 2026-06-29T09:00:00+00:00
+slug = "remote-development-mirage"
+description = "A post on X predicted that development would all move to remote sandboxes. Here is why I think that is a mirage, what makes the model attractive to executives and unappealing to developers, and where selling compute actually makes sense."
+
+[taxonomies]
+tags = ["Business", "Infrastructure", "AI", "Developer Experience"]
++++
+I came across a post on X yesterday predicting that development would all move to remote environments, with the CEOs of sandbox-as-a-service companies jumping in to agree, yes, this is inevitable, this has to happen. I can't help thinking the whole thing is an illusion.
+
+Start with why executives want it to be true. There is a business model more attractive than charging a fixed subscription per seat or per plan, and that is charging for granular units like tokens. Compute lets you do exactly that, and it has more in common with serverless than you might think.
+
+Remember Vercel, Netlify, Cloudflare, and the model where you just run the function and pay only for what you use, dressed up as "and we run it close to your users." The low latency line was sexy enough that developers stopped thinking twice about what they were signing up for. What followed was companies being myopic about whether they needed any of it, and in a few cases developers opening absurd invoices, because it turned out they had burned a lot of minutes during a traffic spike. The whole thing has become ridiculous, to the point that some platforms, Vercel among them, now ship features to optimize a problem they created in the first place. Sound familiar? It is the JavaScript approach to engineering. Keep adding layers to solve the problems the previous layers introduced.
+
+These companies want to sell compute. Some are new to the space. Others are trying to diversify away from being the place you rent machines to run CI. Either way, now they want to sell you a computer you connect to over SSH, configured so you can just build there, and they are desperate to find their own version of the low latency hook, the marketing piece that made developers forget that their database still lives in another region, which quietly defeats the point of being close to anyone. So they reach for new hooks. You can board a flight and your agents keep working. You can kick them off from your phone.
+
+I wrote the other day about [why the sandbox space looks the way it does](/blog/closing-for-security/), and this is the same story told from the developer's side.
+
+Because if any company is well positioned to offer those experiences, it is the frontier labs, the model providers, and the people building the new kinds of IDEs. Why would they reverse the dependency and turn it into compute first, harness second? It is in their interest to be the ones monetizing this market, which means the sandbox companies end up depending on a company like Anthropic to make that piece swappable, while quietly hoping it will also hand them the go-to-market they can't figure out on their own, in a market that is commoditizing faster than they would like. Daytona is pouring money into manufacturing a movement around it, conferences and all. The products are converging on the same offering, the same pricing, the same API. You get a sandbox, you use it, you throw it away.
+
+It is funny, because this is not the first time someone has tried this. GitPod and GitHub Codespaces went for the same model and it did not take. GitPod eventually pivoted away from it into a platform for agents, Ona, and then sold the company to OpenAI. I don't know the real reasons, but I would bet they had something to do with how hard the original idea is to sell.
+
+I am a developer, and I assume the people behind these companies are developers too, or at least technical. There is something genuinely attractive about building elastic compute and hiding one cost model behind another. But put yourself in my seat. What is appealing about moving my work into a sandbox? Sure, I can apt install tools, snapshot and restore, and all of it is neat. An environment is more than a set of executables, though. I lean on plenty of GUI tools that read and write context from the same machine where I write code. I don't need someone to solve giving me access to a server running somewhere, and I don't want to then figure out how to pull a derived artifact back out of it, an Apple bundle, a Rust binary, so I can actually run the thing locally. That is friction I would never have if I just ran things on my own machine. The value does not outweigh the cost of that friction and the new mental models that come with it.
+
+Shopify pushed on this hard for more than a year. It did not work. Any engineer who tries it long enough runs into the drawbacks quickly, and that is the part capital struggles to fix. Or, who knows. Look at serverless again. If you nail the social formula, the gentle shaming of "so you are still one of those developers who works off a laptop," you might just pull it off. We have watched that movie before, so maybe we are watching it again right now.
+
+To be clear, I do see real uses for selling compute. Lifting the ceiling on build farms, the kind of wall you hit with a build system like Bazel. Or running agentic systems on behalf of an organization, say to investigate the issues your users report. But you have to dig to find those, and once you dig you notice the technology and the operations underneath are already commoditized. Which means the business also leans on customers not noticing that yet. And not noticing, conveniently, is something you can buy with enough money.
