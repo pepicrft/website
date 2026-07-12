@@ -42,4 +42,7 @@ The slug becomes the URL: `/blog/hello/`.
 
 ## 🚀 Deploy
 
-Push to `main`. GitHub Actions builds with Zola and deploys to Cloudflare Pages.
+Push to `main`. GitHub Actions builds the site into an image in
+[GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
+The Pepicrft cluster detects the new image digest and rolls it out at
+`https://pepicrft.me`.
