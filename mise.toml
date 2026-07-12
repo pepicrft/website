@@ -1,3 +1,2 @@
 [tools]
 zola = "0.22.1"
-"npm:wrangler" = "3.90.0"

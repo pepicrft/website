@@ -1,27 +1,46 @@
-name: Deploy
+name: Publish Production Image
 
 on:
   push:
     branches: [main]
+    paths:
+      - ".github/workflows/deploy.yml"
+      - ".dockerignore"
+      - "config.toml"
+      - "content/**"
+      - "Dockerfile"
+      - "static/**"
+      - "templates/**"
   workflow_dispatch: {}
 
 jobs:
-  deploy:
+  publish:
+    name: Publish Image
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    concurrency:
+      group: publish-production-image
+      cancel-in-progress: false
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
 
-      - name: Install mise tools (zola + wrangler)
-        uses: jdx/mise-action@v2
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build site
-        run: zola build
-
-      - name: Deploy to Cloudflare Pages
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CF_PAGES_PROJECT_NAME: ${{ vars.CF_PAGES_PROJECT_NAME || 'pepicrft' }}
-        run: |
-          wrangler pages deploy ./build --project-name "$CF_PAGES_PROJECT_NAME" --branch main --commit-dirty=true
+      - name: Build and push image
+        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+        with:
+          context: .
+          push: true
+          labels: org.opencontainers.image.source=https://github.com/pepicrft/website
+          tags: |
+            ghcr.io/pepicrft/website:${{ github.sha }}
+            ghcr.io/pepicrft/website:main
+            ghcr.io/pepicrft/website:main-${{ github.run_number }}-${{ github.sha }}
